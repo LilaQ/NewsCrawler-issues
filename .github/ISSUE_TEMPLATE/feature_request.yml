@@ -1,0 +1,28 @@
+name: Feature request
+description: Suggest an improvement to NewsBar
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: What is difficult today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed experience
+    validations:
+      required: true
+  - type: dropdown
+    id: privacy
+    attributes:
+      label: Would this require new data, permissions, accounts, AI processing, or networking?
+      options:
+        - No
+        - Yes
+        - Not sure
+    validations:
+      required: true
