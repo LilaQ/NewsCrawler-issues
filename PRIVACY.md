@@ -11,7 +11,7 @@ NewsBar stores preferences, enabled and custom feed sources, topic follow/mute r
 
 ## Direct publisher requests
 
-The app contacts configured publishers directly to retrieve RSS/Atom feeds, Hacker News API data, article pages, and article images. Those providers and their image CDNs receive ordinary technical connection data such as the device IP address and may apply their own privacy policies. Article pages are processed locally in a non-persistent, invisible WebKit session with publisher JavaScript disabled. NewsBar extracts text and image URLs and renders them in a native view; it does not send them through an owner-operated proxy.
+The app contacts configured publishers directly to retrieve RSS/Atom feeds, Hacker News API data, article pages, and images. Those providers and their image CDNs receive ordinary technical connection data such as the device IP address and may apply their own privacy policies. When the news list is displayed, available feed preview images are requested directly, downsampled off the main thread, and held in a bounded memory cache. Article pages are processed locally in a non-persistent, invisible WebKit session with publisher JavaScript disabled. NewsBar extracts text and image URLs and renders them in a native view; it does not send them through an owner-operated proxy.
 
 ## Notifications
 
