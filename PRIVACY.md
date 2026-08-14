@@ -1,7 +1,7 @@
 # NewsBar Privacy Notice — Release Draft
 
 Status: **NOT FINAL / OWNER APPROVAL AND LEGAL IDENTITY REQUIRED**
-Last technical review: 2026-08-12
+Last technical review: 2026-08-14
 
 NewsBar is designed without an owner-operated account system, analytics SDK, advertising SDK, tracking SDK, or content-proxy backend.
 
@@ -11,7 +11,7 @@ NewsBar stores preferences, enabled and custom feed sources, topic follow/mute r
 
 ## Direct publisher requests
 
-The app contacts configured publishers directly to retrieve RSS/Atom feeds, Hacker News API data, and article pages. Those providers receive ordinary technical connection data such as the device IP address and may apply their own privacy policies. Article pages load in a non-persistent WebKit session but can still run publisher scripts and analytics during that session.
+The app contacts configured publishers directly to retrieve RSS/Atom feeds, Hacker News API data, article pages, and article images. Those providers and their image CDNs receive ordinary technical connection data such as the device IP address and may apply their own privacy policies. Article pages are processed locally in a non-persistent, invisible WebKit session with publisher JavaScript disabled. NewsBar extracts text and image URLs and renders them in a native view; it does not send them through an owner-operated proxy.
 
 ## Notifications
 
@@ -19,7 +19,7 @@ Optional macOS local notifications can show a user-requested topic match or Morn
 
 ## On-device text processing
 
-The default-enabled German presentation setting locally rewrites common gender markers, paired forms, and nominalized participles in feed text, notifications, and visible text inside embedded article pages. NewsBar does not persist a rewritten copy of the publisher content. The reader labels the adjusted presentation and keeps a link to the unchanged original page.
+The default-enabled German presentation setting locally rewrites common gender markers, paired forms, and nominalized participles in feed text, notifications, and natively rendered extracted article text. NewsBar does not persist a rewritten copy of the publisher content. The reader labels the adjusted presentation and keeps a link to the unchanged original page.
 
 On macOS 26, a Premium user may explicitly request a perspective comparison for a story cluster. NewsBar supplies up to eight visible headlines and feed summaries to Apple's Foundation Model running on the device. NewsBar does not upload that evidence or generated response to an owner-operated server and does not train a model. Apple Intelligence availability and processing remain subject to Apple's platform behavior and terms.
 

@@ -8,7 +8,8 @@ Technical product facts to reflect in the final terms:
 
 - NewsBar aggregates publisher-provided feed metadata and the Hacker News API.
 - Publisher content, trademarks, pages, availability, and accuracy remain the responsibility of their respective providers.
-- NewsBar does not bypass paywalls and links to or embeds original publisher pages.
+- NewsBar does not intentionally bypass paywalls. Its native reader locally extracts and renders available article text and remote images, preserves publisher attribution, and links to the unchanged original page.
+- Local extraction can omit, duplicate, or misstructure content; all article text, images, captions, trademarks, and related rights remain with their respective providers and rightsholders.
 - Users are responsible for custom feed URLs they add.
 - Premium is planned as a one-time non-consumable App Store purchase, subject to Apple's purchase infrastructure and final store configuration.
 - Source availability, clustering, topic matching, and local recommendations are not guaranteed to be complete or error-free.
