@@ -1,13 +1,13 @@
 # NewsBar Privacy Notice — Release Draft
 
 Status: **NOT FINAL / OWNER APPROVAL AND LEGAL IDENTITY REQUIRED**
-Last technical review: 2026-08-14
+Last technical review: 2026-08-15
 
 NewsBar is designed without an owner-operated account system, analytics SDK, advertising SDK, tracking SDK, or content-proxy backend.
 
 ## Data stored on the Mac
 
-NewsBar stores preferences, enabled and custom feed sources, topic follow/mute rules, notification deduplication identifiers, local recommendation counters, read state, and bookmarks in local app storage. It does not transmit this reading profile to an owner-operated service.
+NewsBar stores preferences, enabled and custom feed sources, topic follow/mute rules, notification deduplication identifiers, local recommendation counters, read state, and bookmarks in local app storage. When the optional menu-bar marquee is enabled, it also keeps at most ten headline strings per language locally so the ticker can resume immediately after relaunch; it does not cache article text, URLs, images, or feed summaries for this purpose. NewsBar does not transmit this reading profile to an owner-operated service.
 
 ## Direct publisher requests
 
