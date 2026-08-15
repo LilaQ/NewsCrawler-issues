@@ -1,0 +1,41 @@
+name: Publisher or rights concern
+description: Report a public, non-confidential source, attribution, text, or image concern
+title: "[Rights] "
+labels: [rights]
+body:
+  - type: markdown
+    attributes:
+      value: This is a public form. Do not attach confidential evidence, personal data, credentials, or legal documents. For a security issue, use private vulnerability reporting.
+  - type: input
+    id: source
+    attributes:
+      label: Publisher or source
+    validations:
+      required: true
+  - type: input
+    id: public_url
+    attributes:
+      label: Public URL concerned
+    validations:
+      required: true
+  - type: dropdown
+    id: concern
+    attributes:
+      label: Concern type
+      options:
+        - Feed inclusion
+        - Attribution
+        - Article text
+        - Image
+        - Trademark
+        - Removal request
+        - Other rights concern
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Public details
+      description: Explain the concern without sharing confidential material.
+    validations:
+      required: true

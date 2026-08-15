@@ -1,36 +1,14 @@
-# NewsBar Privacy Notice — Release Draft
+# NewsBar Privacy Notice
 
-Status: **NOT FINAL / OWNER APPROVAL AND LEGAL IDENTITY REQUIRED**
-Last technical review: 2026-08-15
+The maintained, localized privacy notices are published at:
 
-NewsBar is designed without an owner-operated account system, analytics SDK, advertising SDK, tracking SDK, or content-proxy backend.
+- English: https://lilaq.github.io/NewsCrawler-issues/en/privacy.html
+- Deutsch: https://lilaq.github.io/NewsCrawler-issues/de/privacy.html
+- Français: https://lilaq.github.io/NewsCrawler-issues/fr/privacy.html
+- Español: https://lilaq.github.io/NewsCrawler-issues/es/privacy.html
 
-## Data stored on the Mac
+Technical review date: 2026-08-15.
 
-NewsBar stores preferences, enabled and custom feed sources, topic follow/mute rules, notification deduplication identifiers, local recommendation counters, read state, and bookmarks in local app storage. When the optional menu-bar marquee is enabled, it also keeps at most ten headline strings per language locally so the ticker can resume immediately after relaunch; it does not cache article text, URLs, images, or feed summaries for this purpose. NewsBar does not transmit this reading profile to an owner-operated service.
+The current app has no owner-operated account, analytics, advertising, tracking SDK, notification backend, AI backend or content proxy. It stores preferences and reading state locally and connects directly to selected publishers, Hacker News and image CDNs. The public pages describe those flows in detail.
 
-## Direct publisher requests
-
-The app contacts configured publishers directly to retrieve RSS/Atom feeds, Hacker News API data, article pages, and images. Those providers and their image CDNs receive ordinary technical connection data such as the device IP address and may apply their own privacy policies. When the news list is displayed, available feed preview images are requested directly, downsampled off the main thread, and held in a bounded memory cache. Article pages are processed locally in a non-persistent, invisible WebKit session with publisher JavaScript disabled. NewsBar extracts text and image URLs and renders them in a native view; it does not send them through an owner-operated proxy.
-
-## Notifications
-
-Optional macOS local notifications can show a user-requested topic match or Morning Brief reminder. NewsBar does not register for remote push notifications, upload a device token, or operate a notification server.
-
-## On-device text processing
-
-The default-enabled German presentation setting locally rewrites common gender markers, paired forms, and nominalized participles in feed text, notifications, and natively rendered extracted article text. NewsBar does not persist a rewritten copy of the publisher content. The reader labels the adjusted presentation and keeps a link to the unchanged original page.
-
-On macOS 26, a Premium user may explicitly request a perspective comparison for a story cluster. NewsBar supplies up to eight visible headlines and feed summaries to Apple's Foundation Model running on the device. NewsBar does not upload that evidence or generated response to an owner-operated server and does not train a model. Apple Intelligence availability and processing remain subject to Apple's platform behavior and terms.
-
-## Purchases
-
-Apple processes App Store purchase and transaction information. NewsBar reads verified StoreKit entitlements to unlock Premium; the current implementation does not send purchase data to an owner backend.
-
-## User choices
-
-People can disable sources, remove custom sources and topic rules, clear local recommendations, revoke notification permission in macOS System Settings, and remove the app's local data by deleting the application data container.
-
-## Required before release
-
-The final notice must add the owner/controller identity, postal address, approved privacy contact, effective date, applicable rights and complaint channels, retention details, territories, and owner-approved public URL. The final wording must be reviewed against the signed binary and App Store privacy disclosures.
+**Release blocker:** The legal operator/controller identity, postal address and approved privacy contact must be added before App Store submission. The repository does not invent them.

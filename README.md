@@ -1,18 +1,15 @@
-# NewsBar Support
+# NewsBar Support & Policies
 
-This directory is the publish-ready seed for the public `LilaQ/NewsCrawler-issues` companion repository. The application source remains private.
+This is the public companion repository for the private NewsBar application source.
 
-Use the public repository to report bugs, request features, review known issues, and access NewsBar's published support and policy documents once the owner has approved the release details.
+- **Support:** https://lilaq.github.io/NewsCrawler-issues/en/support.html
+- **Privacy:** https://lilaq.github.io/NewsCrawler-issues/en/privacy.html
+- **Terms / EULA status:** https://lilaq.github.io/NewsCrawler-issues/en/terms.html
+- **Accessibility:** https://lilaq.github.io/NewsCrawler-issues/en/accessibility.html
+- **All languages:** https://lilaq.github.io/NewsCrawler-issues/
+- **Issues:** https://github.com/LilaQ/NewsCrawler-issues/issues/new/choose
+- **Security:** use GitHub private vulnerability reporting; do not open a public security issue.
 
-## Before publication
+Public pages are available in English, German, French and Spanish. The policy pages describe the current binary’s technical behavior. Legal operator identity, final EULA selection and source/content-rights approval remain explicit release blockers and must not be guessed.
 
-The following remain release blockers and must not be guessed:
-
-- owner/company legal name and postal address;
-- approved support contact;
-- final bundle identifier and App Store listing;
-- final privacy-policy and terms approval;
-- final source/content-rights decision;
-- final territories and EU trader status.
-
-Until these are resolved, `PRIVACY.md` and `TERMS.md` are review drafts rather than final legal policies.
+The repository intentionally contains no private application source, credentials, purchase records, user data or publisher content.

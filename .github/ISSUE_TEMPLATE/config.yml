@@ -1,1 +1,8 @@
 blank_issues_enabled: false
+contact_links:
+  - name: NewsBar privacy notice
+    url: https://lilaq.github.io/NewsCrawler-issues/en/privacy.html
+    about: Review how NewsBar handles data before opening a privacy question.
+  - name: Private security report
+    url: https://github.com/LilaQ/NewsCrawler-issues/security/advisories/new
+    about: Report vulnerabilities privately; never post exploitable details publicly.

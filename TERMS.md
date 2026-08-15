@@ -1,17 +1,10 @@
-# NewsBar Terms / EULA — Release Draft
+# NewsBar Terms / EULA
 
-Status: **NOT FINAL / OWNER AND LEGAL REVIEW REQUIRED**
+Localized release drafts are published at:
 
-The owner must decide whether to use Apple's Standard EULA or approved custom terms. Do not publish this file as final terms until that decision, the legal identity, governing-law choices, support contact, Premium terms, source/content-rights position, and regional requirements are approved.
+- English: https://lilaq.github.io/NewsCrawler-issues/en/terms.html
+- Deutsch: https://lilaq.github.io/NewsCrawler-issues/de/terms.html
+- Français: https://lilaq.github.io/NewsCrawler-issues/fr/terms.html
+- Español: https://lilaq.github.io/NewsCrawler-issues/es/terms.html
 
-Technical product facts to reflect in the final terms:
-
-- NewsBar aggregates publisher-provided feed metadata and the Hacker News API.
-- Publisher content, trademarks, pages, availability, and accuracy remain the responsibility of their respective providers.
-- NewsBar does not intentionally bypass paywalls. Its native reader locally extracts and renders available article text and remote images, preserves publisher attribution, and links to the unchanged original page.
-- Local extraction can omit, duplicate, or misstructure content; all article text, images, captions, trademarks, and related rights remain with their respective providers and rightsholders.
-- Users are responsible for custom feed URLs they add.
-- Premium is planned as a one-time non-consumable App Store purchase, subject to Apple's purchase infrastructure and final store configuration.
-- Source availability, clustering, topic matching, and local recommendations are not guaranteed to be complete or error-free.
-- The default-enabled German presentation mode locally rewrites visible publisher wording. Its output may be grammatically or contextually wrong, is not the publisher's exact wording, and must remain clearly distinguishable from the linked unchanged original.
-- On supported macOS 26 devices, an optional on-device model can compare concrete wording and emphasis across a story cluster. Generated observations may be incomplete or wrong and are not factual verification, political classification, or a neutrality rating.
+**Release blocker:** The owner must choose Apple’s Standard EULA or approve custom terms, the legal identity and governing details before App Store submission. These drafts document the product facts but do not make that decision.

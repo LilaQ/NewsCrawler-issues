@@ -1,22 +1,12 @@
 # NewsBar Support
 
-## Report a problem
+Use the localized public support page:
 
-Open a GitHub issue in the public `NewsCrawler-issues` repository and include:
+- English: https://lilaq.github.io/NewsCrawler-issues/en/support.html
+- Deutsch: https://lilaq.github.io/NewsCrawler-issues/de/support.html
+- Français: https://lilaq.github.io/NewsCrawler-issues/fr/support.html
+- Español: https://lilaq.github.io/NewsCrawler-issues/es/support.html
 
-- macOS version;
-- NewsBar version and build;
-- affected language, category, or source;
-- steps to reproduce;
-- expected and actual behavior;
-- a screenshot when it contains no personal information.
+Create a public issue at https://github.com/LilaQ/NewsCrawler-issues/issues/new/choose.
 
-Do not post feed credentials, purchase receipts, private article URLs, personal information, or crash logs containing sensitive paths or identifiers.
-
-## Feed or rights concerns
-
-Publishers and rightsholders should use the owner-approved contact that must be added here before release. This contact is currently an explicit release blocker.
-
-## Purchases
-
-NewsBar Premium is planned as a one-time non-consumable in-app purchase. Use **Settings → Restore Purchases** for an existing App Store purchase. Final product availability and support routing depend on App Store Connect configuration.
+Never publish credentials, receipts, private feed URLs, personal data or sensitive logs. Use GitHub private vulnerability reporting for security-sensitive matters.
